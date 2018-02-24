@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+<style>
+*{
+  width:100%;
+  height:100vh;
+  
+}
+body{
+  background-color: #4AB46G;
+  cursor: crosshair;
+}
+#box{
+  height:20px;
+  width:20px;
+  position:absolute;
+  float:left;
+}
+</style>
+
+</head>
+<body onmousemove="m(event)" >
+
+<img id="box" src="https://t2.rbxcdn.com/b13cfa0d1f60140f1be0ca6ecfcc7578"/>
+
+<script>
+
+	function m(e){
+			var bx = document.getElementById("box");
+			bx.style.left = e.pageX;
+			bx.style.top = e.pageY;
+		}
+    
+</script>
+
+</body>
+
+</html>
